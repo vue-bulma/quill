@@ -14,11 +14,28 @@ $ npm install vue-bulma-quill --save
 
 ```vue
 <template>
+  <div class="box">
+    <h3 class="title">
+      Your powerful, rich text editor.
+      <a href="http://quilljs.com">http://quilljs.com</a>
+    </h3>
+    <quill :options="{ theme: 'snow' }"></quill>
+  </div>
 </template>
 
 <script>
+import Quill from 'vue-bulma-quill'
+
+export default {
+  components: {
+    Quill
+  }
+}
 </script>
 
+<style lang="styl">
+@import "~quill/assets/snow"
+</style>
 ```
 
 
