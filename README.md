@@ -6,7 +6,7 @@ Your powerful, rich text editor http://quilljs.com
 ## Installation
 
 ```
-$ npm install vue-quill --save
+$ npm install vue-bulma-quill --save
 ```
 
 
