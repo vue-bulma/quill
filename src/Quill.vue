@@ -1,5 +1,7 @@
 <template>
-  <div class="quill-editor"></div>
+  <div class="quill-editor">
+    <slot></slot>
+  </div>
 </template>
 
 <script>
