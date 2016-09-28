@@ -1,0 +1,22 @@
+{
+  "name": "vue-quill",
+  "version": "0.0.0",
+  "description": "",
+  "main": "src/Quill.vue",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "vue-bulma/quill",
+  "keywords": [
+    "vue",
+    "quill",
+    "editor",
+    "rich text",
+    "wysiwyg"
+  ],
+  "author": "Fangdun Cai <cfddream@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "quill": "1.0.4"
+  }
+}
