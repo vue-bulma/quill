@@ -1,12 +1,15 @@
 {
   "name": "vue-bulma-quill",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Your powerful, rich text editor for Vue",
-  "main": "src/Quill.vue",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": "vue-bulma/quill",
+  "license": "MIT",
+  "author": {
+    "name": "Fangdun Cai",
+    "email": "cfddream@gmail.com",
+    "url": "fundon.me"
+  },
+  "main": "src/Quill.vue",
   "keywords": [
     "vue",
     "quill",
@@ -14,9 +17,7 @@
     "rich text",
     "wysiwyg"
   ],
-  "author": "Fangdun Cai <cfddream@gmail.com>",
-  "license": "MIT",
   "dependencies": {
-    "quill": "1.0.4"
+    "quill": "1.1.0"
   }
 }
