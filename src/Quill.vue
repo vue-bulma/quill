@@ -10,7 +10,7 @@ import Quill from 'quill'
 export default {
 
   props: {
-    value: String
+    value: String,
     options: {
       type: Object,
       default: () => ({})
