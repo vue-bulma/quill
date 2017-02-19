@@ -19,7 +19,7 @@ $ npm install vue-bulma-quill --save
       Your powerful, rich text editor.
       <a href="http://quilljs.com">http://quilljs.com</a>
     </h3>
-    <quill :options="{ theme: 'snow' }">
+    <quill :options="{ theme: 'snow' }" v-model="htmlContent">
       <h2>One Ring to Rule Them All</h2>
       <p><a href="http://en.wikipedia.org/wiki/One_Ring">http://en.wikipedia.org/wiki/One_Ring</a></p>
       <p><br/></p>
@@ -42,6 +42,11 @@ import Quill from 'vue-bulma-quill'
 export default {
   components: {
     Quill
+  },
+  data: () {
+    return {
+      htmlContent: ''
+    }
   }
 }
 </script>
