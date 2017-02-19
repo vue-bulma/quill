@@ -26,8 +26,11 @@ export default {
   },
 
   mounted () {
-    this.editor = new Quill(this.$el, this.options)
-    this.editor.on('text-change', () => this.$emit('input', { target: { value: this.$el.querySelector('.ql-editor').innerHTML }});
+    let rootEl = this.$el
+    this.editor = new Quill(rootEl, this.options)
+    this.editor.on('text-change', () => {
+      this.$emit('input', rootEl.querySelector('.ql-editor').innerHTML)
+    })
   },
 
   watch: {
