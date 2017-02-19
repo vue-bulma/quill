@@ -10,6 +10,7 @@ import Quill from 'quill'
 export default {
 
   props: {
+    value: String
     options: {
       type: Object,
       default: () => ({})
@@ -26,6 +27,7 @@ export default {
 
   mounted () {
     this.editor = new Quill(this.$el, this.options)
+    this.editor.on('text-change', () => this.$emit('input', { target: { value: this.$el.querySelector('.ql-editor').innerHTML }});
   },
 
   watch: {
