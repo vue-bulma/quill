@@ -1,6 +1,6 @@
 {
   "name": "vue-bulma-quill",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Your powerful, rich text editor for Vue",
   "repository": "vue-bulma/quill",
   "license": "MIT",
