@@ -30,7 +30,7 @@ export default {
     let rootEl = this.$el
     this.editor = new Quill(rootEl, this.options)
     this.editor.on('text-change', () => {
-      this.$emit('input', this.editor.root.innerHTML())
+      this.$emit('input', this.editor.root.innerHTML)
     })
 
   },
@@ -38,7 +38,7 @@ export default {
   watch: {
     value () {
       if (!this.editor.hasFocus()) {
-        this.editor.setText(this.value)
+        this.editor.root.innerHTML = this.value
       }
     },
     focused (val) {
