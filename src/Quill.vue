@@ -38,8 +38,7 @@ export default {
   watch: {
     value () {
       if (!this.editor.hasFocus()) {
-        console.log('was set')
-        this.editor.setText(this.value)
+        this.editor.setText(this.editor.root.innerHTML)
       }
     },
     focused (val) {
