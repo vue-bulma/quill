@@ -18,6 +18,8 @@
     "wysiwyg"
   ],
   "dependencies": {
-    "quill": "1.1.0"
+    "quill": "1.1.0",
+    "stylus-loader": "^3.0.1",
+    "stylus": "^0.54.5"
   }
 }
